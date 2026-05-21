@@ -2318,6 +2318,14 @@
       "sI" : 0,
       "sU" : 0
     },
+    "\/public\/BingSiteAuth.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/BingSiteAuth.xml",
+      "oF" : 0
+    },
     "\/public\/browserconfig.xml" : {
       "cB" : 0,
       "ft" : 8192,
