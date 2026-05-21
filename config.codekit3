@@ -2422,6 +2422,14 @@
       "oAP" : "\/public\/sitemap.xml",
       "oF" : 0
     },
+    "\/public\/yandex_35ffc8e8e4cc8a9b.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/yandex_35ffc8e8e4cc8a9b.html",
+      "oF" : 0
+    },
     "\/scripts\/deploy-server.sh" : {
       "cB" : 0,
       "ft" : 8192,
