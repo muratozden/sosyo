@@ -47,6 +47,14 @@
       "oAP" : "\/.env.example",
       "oF" : 0
     },
+    "\/.github\/workflows\/deploy.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.github\/workflows\/deploy.yml",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -461,6 +469,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/dist\/assets\/images\/share\/og-default.png" : {
+      "ft" : 32768,
+      "iS" : 4012,
+      "oA" : 0,
+      "oAP" : "\/dist\/assets\/images\/share\/og-default.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/dist\/assets\/styles\/css\/main.css" : {
       "aP" : 1,
@@ -1207,6 +1228,25 @@
       "oA" : 0,
       "oAP" : "\/dist\/sitemap.xml",
       "oF" : 0
+    },
+    "\/docs\/cloudflare.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/cloudflare.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/node_modules" : {
       "ft" : 65536,
@@ -2296,6 +2336,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/public\/google3a346fc80f4c4836.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/google3a346fc80f4c4836.html",
+      "oF" : 0
+    },
     "\/public\/humans.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2373,6 +2421,49 @@
       "oA" : 0,
       "oAP" : "\/public\/sitemap.xml",
       "oF" : 0
+    },
+    "\/scripts\/deploy-server.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/deploy-server.sh",
+      "oF" : 0
+    },
+    "\/scripts\/deploy-static.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/deploy-static.sh",
+      "oF" : 0
+    },
+    "\/scripts\/server-setup-notes.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/server-setup-notes.html",
+      "oF" : 0
+    },
+    "\/scripts\/server-setup-notes.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/server-setup-notes.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/src\/components\/HeadSEO.astro" : {
       "cB" : 0,

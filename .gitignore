@@ -4,6 +4,10 @@ dist/
 # generated types
 .astro/
 
+# CodeKit / accidental TS compile output in src
+src/**/*.js
+!src/**/*.astro
+
 # dependencies
 node_modules/
 
