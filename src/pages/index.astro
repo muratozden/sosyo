@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site';
+---
+
+<BaseLayout description={SITE.description} path="/">
+	<main role="main" tabindex="-1" aria-label="Ana içerik">
+		<h1>Sosyo</h1>
+		<p>{SITE.description}</p>
+	</main>
+</BaseLayout>

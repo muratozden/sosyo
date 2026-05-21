@@ -1,0 +1,13 @@
+/* the humans responsible & colophon */
+
+/* TEAM */
+Site        : https://www.sosyo.org
+Description : Yeni nesil sosyalleşme aracı
+
+/* FOLLOW US */
+Facebook    : https://www.facebook.com/@
+Instagram   : https://www.instagram.com/@
+
+/* CONTACT */
+Company     : sosyo
+E-Mail      : iletisim@sosyo.org

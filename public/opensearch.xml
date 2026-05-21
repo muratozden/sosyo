@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>sosyo.org</ShortName>
+	<LongName></LongName>
+	<Description></Description>
+	<Image height="16" width="16" type="image/x-icon"></Image>
+	<Tags></Tags>
+	<Url type="text/html" template="https://www.sosyo.org?q={searchTerms}"/>
+	<AdultContent>false</AdultContent>
+	<Language>tr</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

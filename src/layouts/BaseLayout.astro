@@ -1,0 +1,29 @@
+---
+import HeadSEO from '../components/HeadSEO.astro';
+import type { SeoProps } from '../utils/seo';
+
+type Props = SeoProps & {
+	jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+};
+
+const { title, description, path, image, imageAlt, noindex, type, jsonLd } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<HeadSEO
+			title={title}
+			description={description}
+			path={path}
+			image={image}
+			imageAlt={imageAlt}
+			noindex={noindex}
+			type={type}
+			jsonLd={jsonLd}
+		/>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

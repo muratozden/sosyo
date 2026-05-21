@@ -1,0 +1,99 @@
+---
+import {SITE} from '../config/site';
+import type {SeoProps} from '../utils/seo';
+import {
+    absoluteUrl,
+    buildCanonical,
+    pageTitle,
+    resolveSiteOrigin,
+    webSiteJsonLd,
+} from '../utils/seo';
+
+type Props = SeoProps & {
+    jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+};
+
+const {
+    title,
+    description = SITE.description,
+    path = Astro.url.pathname,
+    image = SITE.defaultImage,
+    imageAlt = SITE.name,
+    noindex = false,
+    type = 'website',
+    jsonLd,
+} = Astro.props;
+
+const origin = resolveSiteOrigin(Astro.site);
+const documentTitle = pageTitle(title);
+const canonicalUrl = buildCanonical(path, origin);
+const imageUrl = absoluteUrl(image, origin);
+const maskIconUrl = absoluteUrl(SITE.maskIcon, origin);
+const faviconUrl = absoluteUrl(SITE.faviconSvg, origin);
+
+const googleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const yandexVerification = import.meta.env.PUBLIC_YANDEX_VERIFICATION;
+const bingVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
+
+const structuredData = jsonLd ?? webSiteJsonLd(origin);
+---
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{documentTitle}</title>
+<meta name="description" content={description}/>
+<meta name="author" content={SITE.name}/>
+<meta name="generator" content={Astro.generator}/>
+<link rel="canonical" href={canonicalUrl}/>
+
+{
+    noindex ? (
+    <meta name="robots" content="noindex, nofollow"/>) : (
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>)
+    }
+
+<meta property="og:site_name" content={SITE.name}/>
+<meta property="og:type" content={type}/>
+<meta property="og:title" content={documentTitle}/>
+<meta property="og:description" content={description}/>
+<meta property="og:url" content={canonicalUrl}/>
+<meta property="og:locale" content={SITE.locale}/>
+<meta property="og:image" content={imageUrl}/>
+<meta property="og:image:alt" content={imageAlt}/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content={documentTitle}/>
+<meta name="twitter:description" content={description}/>
+<meta name="twitter:image" content={imageUrl}/>
+<meta name="twitter:image:alt" content={imageAlt}/>
+{SITE.twitter &&
+<meta name="twitter:site" content={SITE.twitter}/>}
+
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="theme-color" content={SITE.themeColor}/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content={SITE.name}/>
+<meta name="msapplication-TileColor" content={SITE.tileColor}/>
+<meta name="msapplication-config" content="/browserconfig.xml"/>
+
+<link rel="icon" href={faviconUrl} type="image/svg+xml"/>
+<link rel="mask-icon" href={maskIconUrl} color="#000000"/>
+<link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="/manifest.json"/>
+<link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title={SITE.name}/>
+
+<link rel="preload" href="/assets/fonts/gf-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/assets/fonts/gf-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/assets/fonts/gf-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="/assets/fonts/gf-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+
+<link rel="stylesheet" href="/assets/styles/css/main.css"/>
+
+{googleVerification &&<meta name="google-site-verification" content={googleVerification}/>}
+{yandexVerification &&
+<meta name="yandex-verification" content={yandexVerification}/>}
+{bingVerification &&
+<meta name="msvalidate.01" content={bingVerification}/>}
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)}/>

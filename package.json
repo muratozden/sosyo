@@ -1,0 +1,22 @@
+{
+  "name": "sosyo",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "styles": "lessc public/assets/styles/less/main.less public/assets/styles/css/main.css --compress"
+  },
+  "dependencies": {
+    "astro": "^6.3.6"
+  },
+  "devDependencies": {
+    "less": "^4.3.0"
+  },
+  "devDependencies": {
+    "less": "^4.6.4"
+  }
+}

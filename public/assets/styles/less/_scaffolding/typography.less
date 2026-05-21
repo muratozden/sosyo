@@ -1,0 +1,51 @@
+/* =============================================================================
+   @font-face
+   ========================================================================== */
+
+@font-dir: '/assets/fonts';
+
+.font(@family) {
+  @font-face {
+    font-family: @family;
+    src: url('@{font-dir}/@{family}.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.font(gf-regular);
+.font(gf-medium);
+.font(gf-semibold);
+.font(gf-bold);
+
+/* =============================================================================
+   Typeography
+   ========================================================================== */
+
+body {
+  font-family: gf-regular, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-family: gf-bold, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
