@@ -31,10 +31,6 @@ const imageUrl = absoluteUrl(image, origin);
 const maskIconUrl = absoluteUrl(SITE.maskIcon, origin);
 const faviconUrl = absoluteUrl(SITE.faviconSvg, origin);
 
-const googleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
-const yandexVerification = import.meta.env.PUBLIC_YANDEX_VERIFICATION;
-const bingVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION;
-
 const structuredData = jsonLd ?? webSiteJsonLd(origin);
 ---
 
@@ -45,12 +41,7 @@ const structuredData = jsonLd ?? webSiteJsonLd(origin);
 <meta name="author" content={SITE.name}/>
 <meta name="generator" content={Astro.generator}/>
 <link rel="canonical" href={canonicalUrl}/>
-
-{
-    noindex ? (
-    <meta name="robots" content="noindex, nofollow"/>) : (
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>)
-    }
+{noindex ? (<meta name="robots" content="noindex, nofollow"/>) : (<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>)}
 
 <meta property="og:site_name" content={SITE.name}/>
 <meta property="og:type" content={type}/>
@@ -65,8 +56,7 @@ const structuredData = jsonLd ?? webSiteJsonLd(origin);
 <meta name="twitter:description" content={description}/>
 <meta name="twitter:image" content={imageUrl}/>
 <meta name="twitter:image:alt" content={imageAlt}/>
-{SITE.twitter &&
-<meta name="twitter:site" content={SITE.twitter}/>}
+{SITE.twitter &&<meta name="twitter:site" content={SITE.twitter}/>}
 
 <meta name="referrer" content="strict-origin-when-cross-origin"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -76,7 +66,6 @@ const structuredData = jsonLd ?? webSiteJsonLd(origin);
 <meta name="apple-mobile-web-app-title" content={SITE.name}/>
 <meta name="msapplication-TileColor" content={SITE.tileColor}/>
 <meta name="msapplication-config" content="/browserconfig.xml"/>
-<meta name="yandex-verification" content="35ffc8e8e4cc8a9b" />
 
 <link rel="icon" href={faviconUrl} type="image/svg+xml"/>
 <link rel="mask-icon" href={maskIconUrl} color="#000000"/>
@@ -90,11 +79,5 @@ const structuredData = jsonLd ?? webSiteJsonLd(origin);
 <link rel="preload" href="/assets/fonts/gf-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 
 <link rel="stylesheet" href="/assets/styles/css/main.css"/>
-
-{googleVerification &&<meta name="google-site-verification" content={googleVerification}/>}
-{yandexVerification &&
-<meta name="yandex-verification" content={yandexVerification}/>}
-{bingVerification &&
-<meta name="msvalidate.01" content={bingVerification}/>}
 
 <script type="application/ld+json" set:html={JSON.stringify(structuredData)}/>

@@ -9,6 +9,26 @@
   ],
   "creatorBuild" : "34921",
   "files" : {
+    "\/_design\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_design\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/_design\/symbol.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_design\/symbol.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/.astro\/content.d.ts" : {
       "cDF" : 0,
       "ft" : 128,
@@ -24,6 +44,14 @@
       "rC" : 0,
       "tEC" : 2018
     },
+    "\/.astro\/settings.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.astro\/settings-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/.astro\/types.d.ts" : {
       "cDF" : 0,
       "ft" : 128,
@@ -38,14 +66,6 @@
       "oF" : 1,
       "rC" : 0,
       "tEC" : 2018
-    },
-    "\/.env.example" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.env.example",
-      "oF" : 0
     },
     "\/.github\/workflows\/deploy.yml" : {
       "cB" : 0,
@@ -1663,6 +1683,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/public\/assets\/images\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/public\/assets\/images\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/public\/assets\/images\/share\/og-default.png" : {
       "ft" : 32768,
       "iS" : 4012,
@@ -1675,6 +1705,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/public\/assets\/images\/symbol.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/public\/assets\/images\/symbol.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/public\/assets\/styles\/css\/main.css" : {
       "aP" : 1,
@@ -2318,20 +2358,20 @@
       "sI" : 0,
       "sU" : 0
     },
-    "\/public\/BingSiteAuth.xml" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/BingSiteAuth.xml",
-      "oF" : 0
-    },
     "\/public\/browserconfig.xml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/browserconfig.xml",
+      "oF" : 0
+    },
+    "\/public\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/favicon.ico",
       "oF" : 0
     },
     "\/public\/favicon.svg" : {
@@ -2344,12 +2384,12 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/public\/google3a346fc80f4c4836.html" : {
+    "\/public\/grid.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/public\/google3a346fc80f4c4836.html",
+      "oAP" : "\/public\/grid.html",
       "oF" : 0
     },
     "\/public\/humans.txt" : {
@@ -2428,14 +2468,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/sitemap.xml",
-      "oF" : 0
-    },
-    "\/public\/yandex_35ffc8e8e4cc8a9b.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/yandex_35ffc8e8e4cc8a9b.html",
       "oF" : 0
     },
     "\/scripts\/deploy-server.sh" : {

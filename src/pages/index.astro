@@ -4,8 +4,23 @@ import { SITE } from '../config/site';
 ---
 
 <BaseLayout description={SITE.description} path="/">
-	<main role="main" tabindex="-1" aria-label="Ana içerik">
+	<header class="container">
+		<section class="user">
+			<span><strong>sosyo</strong> hesabınınızla giriş yapın</span>
+			<a href="/kayit" class="bg-link" rel="nofollow">üye ol</a>
+			<a href="/giris" rel="nofollow">giriş</a>
+		</section>
+		<a href="">logo</a>
+		<nav>
+			<a></a>
+		</nav>
+	</header>
+	<main class="container" role="main" tabindex="-1" aria-label="Ana içerik">
+
+
+
 		<h1>Sosyo</h1>
 		<p>{SITE.description}</p>
 	</main>
+	<footer class="container"></footer>
 </BaseLayout>

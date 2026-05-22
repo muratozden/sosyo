@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Sosyo — Flex Grid Örnekleri</title>
+	<link rel="stylesheet" href="/assets/styles/css/main.css">
+</head>
+<body>
+<div class="grid-doc">
+	<div class="container">
+		<h1>Flex Grid</h1>
+		<p class="lead">12 kolonlu flex yapı. Sınıflar: <code>.container</code>, <code>.row</code>, <code>.col-*</code>, responsive <code>.col-md-*</code> vb.</p>
+
+		<h2>1. Temel — 12 eşit kolon</h2>
+		<p class="example-label">.row → .col-1 × 12</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-1"><div class="grid-cell">1</div></div>
+				<div class="col-1"><div class="grid-cell">2</div></div>
+				<div class="col-1"><div class="grid-cell">3</div></div>
+				<div class="col-1"><div class="grid-cell">4</div></div>
+				<div class="col-1"><div class="grid-cell">5</div></div>
+				<div class="col-1"><div class="grid-cell">6</div></div>
+				<div class="col-1"><div class="grid-cell">7</div></div>
+				<div class="col-1"><div class="grid-cell">8</div></div>
+				<div class="col-1"><div class="grid-cell">9</div></div>
+				<div class="col-1"><div class="grid-cell">10</div></div>
+				<div class="col-1"><div class="grid-cell">11</div></div>
+				<div class="col-1"><div class="grid-cell">12</div></div>
+			</div>
+		</div>
+
+		<h2>2. Üç eşit sütun</h2>
+		<p class="example-label">.col-4 + .col-4 + .col-4</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-4"><div class="grid-cell">col-4</div></div>
+				<div class="col-4"><div class="grid-cell">col-4</div></div>
+				<div class="col-4"><div class="grid-cell">col-4</div></div>
+			</div>
+		</div>
+
+		<h2>3. Karışık genişlik</h2>
+		<p class="example-label">.col-3 + .col-6 + .col-3</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-3"><div class="grid-cell">col-3</div></div>
+				<div class="col-6"><div class="grid-cell grid-cell-dark">col-6</div></div>
+				<div class="col-3"><div class="grid-cell">col-3</div></div>
+			</div>
+		</div>
+
+		<h2>4. Esnek kolon (.col)</h2>
+		<p class="example-label">.col-3 + .col (kalan alanı paylaşır) + .col-auto</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-3"><div class="grid-cell">col-3</div></div>
+				<div class="col"><div class="grid-cell">col (flex-grow)</div></div>
+				<div class="col-auto"><div class="grid-cell">auto</div></div>
+			</div>
+		</div>
+
+		<h2>5. Offset</h2>
+		<p class="example-label">.col-4 .offset-4</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-4 offset-4"><div class="grid-cell">offset-4</div></div>
+			</div>
+		</div>
+
+		<h2>6. Responsive</h2>
+		<p class="example-label">.col-12 .col-md-6 .col-lg-4 — mobilde tam, tablette yarım, desktop üçlü</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">1</div></div>
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">2</div></div>
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">3</div></div>
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">4</div></div>
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">5</div></div>
+				<div class="col-12 col-md-6 col-lg-4"><div class="grid-cell">6</div></div>
+			</div>
+		</div>
+
+		<h2>7. Hizalama</h2>
+		<p class="example-label">.row.align-items-center.justify-content-between</p>
+		<div class="example">
+			<div class="row align-items-center justify-content-between" style="min-height: 100px; background: #f5f5f5; border-radius: 4px;">
+				<div class="col-3"><div class="grid-cell">start</div></div>
+				<div class="col-3"><div class="grid-cell" style="min-height: 72px;">center</div></div>
+				<div class="col-3"><div class="grid-cell">end</div></div>
+			</div>
+		</div>
+
+		<h2>8. Gap (.g-3)</h2>
+		<p class="example-label">.row.g-3 — padding gutter yerine gap</p>
+		<div class="example">
+			<div class="row g-3">
+				<div class="col-4"><div class="grid-cell">g-3</div></div>
+				<div class="col-4"><div class="grid-cell">g-3</div></div>
+				<div class="col-4"><div class="grid-cell">g-3</div></div>
+			</div>
+		</div>
+
+		<h2>9. İç içe satır</h2>
+		<p class="example-label">.col-8 içinde .row</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-8">
+					<div class="grid-cell" style="padding: 12px;">
+						<div class="row">
+							<div class="col-6"><div class="grid-cell">iç col-6</div></div>
+							<div class="col-6"><div class="grid-cell">iç col-6</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4"><div class="grid-cell">col-4</div></div>
+			</div>
+		</div>
+
+		<h2>10. Sıra (.order)</h2>
+		<p class="example-label">.order-md-2, .order-md-1, .order-md-3</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-4 order-3 order-md-1"><div class="grid-cell">1 → md:1</div></div>
+				<div class="col-4 order-1 order-md-2"><div class="grid-cell">2 → md:2</div></div>
+				<div class="col-4 order-2 order-md-3"><div class="grid-cell">3 → md:3</div></div>
+			</div>
+		</div>
+
+		<h2>11. container-fluid</h2>
+		<p class="example-label">Tam genişlik konteyner</p>
+	</div>
+	<div class="container-fluid example">
+		<div class="row">
+			<div class="col-6"><div class="grid-cell">fluid col-6</div></div>
+			<div class="col-6"><div class="grid-cell">fluid col-6</div></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>12. Sidebar düzeni</h2>
+		<p class="example-label">.col-lg-3 + .col-lg-9 — tipik profil / feed</p>
+		<div class="example">
+			<div class="row">
+				<div class="col-12 col-lg-3"><div class="grid-cell">sidebar</div></div>
+				<div class="col-12 col-lg-9"><div class="grid-cell grid-cell-dark">ana içerik</div></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

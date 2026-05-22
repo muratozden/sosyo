@@ -29,11 +29,11 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  letter-spacing: 0;
+  letter-spacing: .12px;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong {
-  font-family: gf-bold, Arial, sans-serif;
+  font-family: gf-bold, sans-serif;
   font-weight: normal;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +45,25 @@ p {
 }
 
 a {
-  color: #000;
+  color: #202B27;
+  font-family: gf-bold, sans-serif;
   text-decoration: none;
   transition: 0.2s ease;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a.bg-link {
+  background-color: var(--primary-color);
+  display: inline-block;
+  text-decoration: underline;
+  padding: 4px 8px;
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+
 }
