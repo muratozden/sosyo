@@ -1,99 +1,78 @@
 {
-  "name": "sosyo",
-  "short_name": "sosyo",
+  "name": "Sosyo",
+  "short_name": "Sosyo",
+  "id": "/",
   "scope": "/",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#000000",
-  "theme_color": "#FFFFFF",
-  "description": "description",
-  "dir": "auto",
-  "lang": "tr-TR",
+  "background_color": "#f2EEE8",
+  "theme_color": "#1c1c1e",
+  "description": "Yeni nesil sosyalleşme aracı",
+  "dir": "ltr",
+  "lang": "tr",
   "icons": [
     {
-      "src": "/assets/img/favicon/16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/img/favicon/32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/img/favicon/48x48.png",
+      "src": "/assets/images/favicon/48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/72x72.png",
+      "src": "/assets/images/favicon/72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/96x96.png",
+      "src": "/assets/images/favicon/96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/144x144.png",
+      "src": "/assets/images/favicon/128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/152x152.png",
+      "src": "/assets/images/favicon/152x152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/180x180.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/img/favicon/192x192.png",
+      "src": "/assets/images/favicon/192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/assets/img/favicon/256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/img/favicon/384x384.png",
+      "src": "/assets/images/favicon/384x384.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/favicon/512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/assets/img/favicon/512x512.png",
+      "src": "/assets/images/favicon/512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/assets/images/favicon/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
     {
-      "src": "/assets/img/favicon/1280x720.png",
+      "src": "/assets/images/favicon/1280x720.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Ana Ekran Yatay"
-    },
-    {
-      "src": "/assets/img/favicon/720x1280.png",
-      "sizes": "720x1280",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Ana Ekran Dikey"
+      "label": "Sosyo ana ekran"
     }
-  ],
-  "splash_pages": null
+  ]
 }

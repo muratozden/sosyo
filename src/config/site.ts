@@ -6,7 +6,7 @@ export const SITE = {
 	url: 'https://www.sosyo.org',
 	locale: 'tr_TR',
 	lang: 'tr',
-	themeColor: '#ffffff',
+	themeColor: '#1c1c1e',
 	tileColor: '#000000',
 	defaultImage: '/assets/images/share/og-default.png',
 	faviconSvg: '/favicon.svg',

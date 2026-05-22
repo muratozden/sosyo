@@ -29,7 +29,6 @@ const documentTitle = pageTitle(title);
 const canonicalUrl = buildCanonical(path, origin);
 const imageUrl = absoluteUrl(image, origin);
 const maskIconUrl = absoluteUrl(SITE.maskIcon, origin);
-const faviconUrl = absoluteUrl(SITE.faviconSvg, origin);
 
 const structuredData = jsonLd ?? webSiteJsonLd(origin);
 ---
@@ -67,9 +66,10 @@ const structuredData = jsonLd ?? webSiteJsonLd(origin);
 <meta name="msapplication-TileColor" content={SITE.tileColor}/>
 <meta name="msapplication-config" content="/browserconfig.xml"/>
 
-<link rel="icon" href={faviconUrl} type="image/svg+xml"/>
-<link rel="mask-icon" href={maskIconUrl} color="#000000"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png"/>
+<link rel="mask-icon" href={maskIconUrl} color="#000000"/>
 <link rel="manifest" href="/manifest.json"/>
 <link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title={SITE.name}/>
 
